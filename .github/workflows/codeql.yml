@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'javascript' ]
+        language: [ 'javascript', 'typescript' ]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift' ]
         # Adjust this list as needed for your project
 
@@ -39,8 +39,3 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: ${{ matrix.language }}-analysis
-
-    - name: Upload SARIF results to GitHub
-      uses: github/codeql-action/upload-sarif@v3
-      with:
-        category: ${{ matrix.language }}-sarif-results
