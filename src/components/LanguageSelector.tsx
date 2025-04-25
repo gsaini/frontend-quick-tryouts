@@ -13,6 +13,10 @@ const LanguageSelector: React.FC = () => {
   };
 
   return (
+    /**
+     * Custom Styled Select Box.
+     * Ref: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select
+     */
     <select
       className="language-selector"
       value={language}

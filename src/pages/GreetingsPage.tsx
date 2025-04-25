@@ -7,10 +7,12 @@ export const GreetingsPage: React.FC = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    // Please utilize your API Key to get greeting response..
     const ai = new GoogleGenAI({apiKey: 'process.env.API_KEY' });
 
     const generateGreeting = async () => { 
         try {
+          // Tried out LLM's chunked response. 
           const response = await ai.models.generateContentStream({
               model: 'gemini-2.0-flash',
               contents: 'Write a friendly greeting with a 😊',
