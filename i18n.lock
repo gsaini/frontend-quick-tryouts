@@ -1,5 +1,9 @@
 version: 1
 checksums:
   63f4c97e43b1d06779a7f553869f769a:
+    select_language: d75cf5fbce8a4c7a9055e2210af74480
+    notifications: c52df856139b50dbb1cae7bfb1cf73bb
+    charts: 1da4564d89264c89de4ed28d7451b43e
+    greetings: c628e66fe64f1020d181543e7a36ba54
     welcome_message: e0ac180b0ff2a3fcee1cf9e89fffafc6
     description: 47e2aadcf17ccec70fa8d83bd7e315b4

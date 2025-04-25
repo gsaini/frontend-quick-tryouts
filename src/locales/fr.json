@@ -1,4 +1,8 @@
 {
+  "select_language": "Sélectionner la langue",
+  "notifications": "Notifications",
+  "charts": "Graphiques",
+  "greetings": "Salutations",
   "welcome_message": "Bienvenue à la démo i18n !",
   "description": "Ceci est une démonstration de la fonctionnalité i18n dans Lingo."
 }

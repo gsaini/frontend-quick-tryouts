@@ -1,45 +1,181 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-#root, .App {
-  width: 100%;
+/* Reset default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
   height: 100%;
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  background-color: #fff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.card {
-  padding: 2em;
+/* Header */
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.read-the-docs {
-  color: #888;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo {
+  font-weight: bold;
+}
+
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notifications-icon {
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f8fafc;
+  padding: 20px;
+  width: 200px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  /* padding: 10px; */
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar-link:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.sidebar-link-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.main-link {
+  padding: 10px;
+  flex: 1;
+}
+
+
+
+.your-teams {
+  margin-top: 20px;
+}
+
+.your-teams-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #6b7280;
+}
+
+.sidebar-settings {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Language Selector */
+.language-selector {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #1f2937;
+  cursor: pointer;
+  appearance: none;
 }
